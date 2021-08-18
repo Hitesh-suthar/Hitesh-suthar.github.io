@@ -8,9 +8,9 @@ let checkbox,checkbox1,checkbox2 ;
 let gravityIntensity , backalpha ;
 let img;
 
-function preload(){
-    img = loadImage('background.jpg')
-}
+// function preload(){
+//     img = loadImage('background.jpg')
+// }
 
 
 function setup(){
@@ -57,7 +57,7 @@ function setup(){
   
 function draw(){
     
-    background( img , 255 - backalpha.value() ); 
+    background( 220 , 255 - backalpha.value() ); 
     textAlign( CENTER , CENTER );
     for( let i=0 ; i < bubble.length ;i++ ){     
         bubble[i].show(); 
