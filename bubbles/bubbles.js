@@ -39,7 +39,8 @@ function setup(){
     gravity = new p5.Vector( 0 , 5 ) ;
   
     checkbox = createCheckbox('Gravity', false);
- 
+    checkbox.position( 0, windowHeight-30 );
+
     checkbox1 = createCheckbox('Pause', false);
     checkbox1.position( windowWidth-80 , windowHeight-30 );
  
