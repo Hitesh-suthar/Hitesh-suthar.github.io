@@ -1,0 +1,46 @@
+body{
+    font-family: "Audiowide", sans-serif;
+    margin:0px;
+    padding:0px;
+}
+.heading {
+    color: rgb(235, 230, 171);
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 29%, rgba(47,37,16,1) 82%);
+    display:block;
+    font-size:50px;
+}
+
+.container {
+    box-sizing:content-box;
+    height:fit-content;
+    text-align: center;
+}
+.pages {
+    background-color: rgb(255, 146, 44);
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 97, 5);
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding:10px 5px;
+    width :auto;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    cursor: pointer;
+    
+}
+.pages:hover{
+    background-color: rgb(255, 44, 44);
+    color: rgb(255, 255, 255);
+}
+.desc{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    display : block;
+    font-size: 15px;
+    text-align: center;
+}
