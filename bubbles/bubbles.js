@@ -15,7 +15,7 @@ let img;
 
 function setup(){
     createCanvas( windowWidth , windowHeight - 45 );
-    frameRate( 30 );
+//     frameRate( 30 );
     for( let i = 0 ; i < n ; i++ ){
         let rad = random( minRadius , maxRadius );
         let center = new p5.Vector( random( rad , width-rad ) , random( rad , height-rad ));
