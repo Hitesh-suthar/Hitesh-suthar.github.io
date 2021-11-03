@@ -27,7 +27,6 @@ function draw (){
             drawing = false;
             noLoop();
         }
-    }
 }
 class spirograph {
 
