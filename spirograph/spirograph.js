@@ -13,12 +13,13 @@ function setup(){
     }
 }
 function draw (){
-    for(let k=0;k<10;k++){
         background(backCol);
         for(let j = 0 ; j < spirals.length ; j++){
             if(drawing){
-                spirals[j].construct();
-                i++;
+                for(let k=0;k<10;k++){
+                    spirals[j].construct();
+                    i++;
+                }
             }
             spirals[j].show();
         }
