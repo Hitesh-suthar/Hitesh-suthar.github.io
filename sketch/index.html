@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HITESH SUTHAR</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <lable for="favcolor">SELECT COLOR : </lable>
+    <input type="color" id="favcolor" name="favcolor" value="#000000">
+    <lable for="weights">SELECT WEIGHT: </lable>
+    <select name="weights" id="weight">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option> 
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>  
+    <input type="button" onclick="save()" value="SAVE">
+    <input type="button" onclick="clean()" value="CLEAR">
+  </form>
+    <script src="sketch.js"></script>
+    <!-- <script src="../p5.js"></script> -->
+</body>
+</html>
