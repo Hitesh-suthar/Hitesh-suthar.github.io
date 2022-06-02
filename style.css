@@ -1,46 +1,307 @@
-body{
-    font-family: "Audiowide", sans-serif;
-    margin:0px;
-    padding:0px;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
-.heading {
-    color: rgb(235, 230, 171);
+
+.sticky {
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid white;
+}
+
+.head {
+    background: linear-gradient(90deg, rgba(204, 10, 10, 1) 0%, rgba(137, 10, 37, 1) 27%, rgba(0, 5, 96, 1) 61%, rgba(0, 13, 47, 1) 100%);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    height: 75px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.head-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.head-left .main-logo {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.head-text {
+    font-family: "Audiowide", sans-serif;
+    font-size: 40px;
+    margin-left: 10px;
+    color: rgb(224, 251, 255);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 53px;
+}
+
+.hamburger .line {
+    display: block;
+    background-color: white;
+    width: 29px;
+    height: 2px;
+    margin: 7px 0px;
+}
+
+.links,
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .pages {
+    list-style: none;
+    display: inline-block;
+    margin: 6px 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.links .pages a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links .pages:hover,
+.contact a img:hover {
+    transform: scale(1.2);
+}
+
+.links .pages:hover a {
+    text-decoration: underline;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('Assets/background.jpg') rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    background-blend-mode: darken;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.text {
+    width: 70%;
+    margin: auto
+}
+
+h2 {
     text-align: center;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 29%, rgba(47,37,16,1) 82%);
-    display:block;
-    font-size:50px;
+    padding: 5px 9px;
+    margin-top: 45px;
+    font-family: 'Krub', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.desc {
+    font-family: 'Krub', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 9px;
+}
+
+strong {
+    color: rgb(255, 159, 34);
+}
+
+.desc a {
+    color: rgb(224, 0, 112);
+    text-decoration: none;
+}
+
+.logos {
+    width: 60vw;
+    height: 60%;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo:hover.logo {
+    background-color: rgba(199, 199, 199, 0.493);
+}
+
+.logo {
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 170px;
+    height: 50%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
 }
 
 .container {
-    box-sizing:content-box;
-    height:fit-content;
-    text-align: center;
+
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px 0px;
 }
-.pages {
-    background-color: rgb(255, 146, 44);
-    border: none;
+
+.sketch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(96, 0, 0, 1) 0%, rgba(78, 0, 14, 1) 15%, rgba(19, 0, 58, 1) 41%, rgba(4, 0, 69, 1) 60%, rgba(71, 0, 111, 1) 86%, rgba(98, 0, 147, 1) 96%, rgba(91, 0, 129, 1) 100%);
     border-radius: 10px;
-    color: rgb(0, 97, 5);
-    box-sizing: border-box;
-    margin: 5px auto;
-    padding:10px 5px;
-    width :auto;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: none;
-    display:block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 5px, rgba(0, 0, 0, 0.22) 0px 10px 5px;
+    width: 70%;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.sketch-info {
+    width: 60%;
+    padding: 30px;
+}
+
+.title {
+    padding: 0px 10px;
     cursor: pointer;
-    
+    border-left: 7px solid rgb(255, 153, 0);
 }
-.pages:hover{
-    background-color: rgb(255, 44, 44);
-    color: rgb(255, 255, 255);
+
+.title a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    cursor: pointer;
 }
-.desc{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
-    display : block;
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    color: rgb(218, 218, 218);
+    margin: 5px;
+    padding: 10px 0px;
     font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.sketch-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+
+}
+
+.sketch-img a img {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+footer {
+    width: 100%;
+    background: rgb(103, 103, 103);
+    background: linear-gradient(90deg, rgba(103, 103, 103, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(103, 103, 103, 1) 100%);
+    height: auto;
+}
+
+footer .text h2 {
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.email a {
+    display: block;
+    text-decoration: none;
     text-align: center;
+    color: rgb(255, 211, 211);
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px;
+}
+
+.contact {
+    padding: 10px 20px 0px 20px;
+}
+
+.contact a img {
+    width: 30px;
+}
+
+.footer-links .pages a {
+    color: rgb(202, 202, 202);
+    font-size: 12px;
+}
+
+footer .copyright {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(133, 133, 133);
+    padding: 20px 0px;
+    font-size: 13px;
+}
+
+@media screen and (max-width:889px) {
+    .head {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .sketch {
+        height: auto;
+        flex-direction: column;
+    }
 }
