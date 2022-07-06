@@ -1,46 +1,90 @@
-body{
-    font-family: "Audiowide", sans-serif;
-    margin:0px;
-    padding:0px;
-}
-.heading {
-    color: rgb(235, 230, 171);
-    text-align: center;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 29%, rgba(47,37,16,1) 82%);
-    display:block;
-    font-size:75px;
-}
-.container{
-    display:inline;
-}
-.options {
-    background-color: rgb(54, 31, 0);
-    box-sizing:content-box;
-    height:fit-content;
-    text-align: center;
-}
-.button {
-    background-color: rgb(109, 218, 255);
-    border: none;
-    border-radius: 10px;
-    color: rgb(73, 75, 0);
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    margin: 5px auto;
-    padding:10px 5px;
-    width : auto;
-    font-size: auto;
-    text-align: center;
-    text-decoration: none;
-    display:inline;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin: 10px auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.header-name {
+    font-family: Audiowide, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9vmin;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #1a2b52;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #ff6e6edb;
+    padding: 8px 10px;
+    margin-inline: 5px;
+    color: #004857;
+    border-radius: 5px;
+    width: 220px;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+.p5Canvas {
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+#speed {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    background: #ff6e6edb;
+    outline: none;
+}
+
+#speed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: #04AA6D;
     cursor: pointer;
 }
-canvas{
-    margin-top: 2px;
-    border :rgb(54, 31, 0);
-    border-radius: 20px;  
+label , span{
+    color: white;
+    padding-inline: 20px;
 }
-.text{
-    color: lightcoral;
-    display : inline;
+span{
+    width: 20px;
 }
