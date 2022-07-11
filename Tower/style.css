@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", cursive;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+#mycanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.highscore-containar {
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 15px;
+    transition: font-size 0.2s ease-in;
+}
+
+.score {
+    text-align: center;
+    font-size: 60px;
+    transition: font-size 0.2s ease-in;
+}
+
+.emphasize {
+    font-size: 80px;
+}
+
+.emphasize-hs {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameover,
+.start-tag {
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+.hidden {
+    opacity: 0;
+}
