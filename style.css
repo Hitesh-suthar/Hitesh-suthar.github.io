@@ -9,14 +9,14 @@
 }
 
 .sticky {
-    /* position: -webkit-sticky; */
     position: sticky;
     top: 0;
-    border-bottom: 3px solid white;
+    z-index: 10;
 }
 
 .head {
-    background: linear-gradient(90deg, rgba(204, 10, 10, 1) 0%, rgba(137, 10, 37, 1) 27%, rgba(0, 5, 96, 1) 61%, rgba(0, 13, 47, 1) 100%);
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    box-shadow: rgba(0, 0, 0, 0.462) 0px 8px 8px;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -24,7 +24,6 @@
     width: 100%;
     min-height: 60px;
     height: 75px;
-    padding: 8px;
     box-sizing: border-box;
 }
 
@@ -35,32 +34,17 @@
     height: 75px;
 }
 
-.head-left .main-logo {
+.main-logo {
     height: 100%;
     border-radius: 10px;
 }
 
 .head-text {
     font-family: "Audiowide", sans-serif;
-    font-size: 40px;
-    margin-left: 10px;
-    color: rgb(224, 251, 255);
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-}
-
-.hamburger {
-    display: none;
-    position: absolute;
-    top: 26px;
-    right: 53px;
-}
-
-.hamburger .line {
-    display: block;
-    background-color: white;
-    width: 29px;
-    height: 2px;
-    margin: 7px 0px;
+    font-size: 30px;
+    color: rgb(0, 15, 66);
+    text-shadow: -2px 2px 5px rgb(216, 248, 255);
+    padding: 5px 0px;
 }
 
 .links,
@@ -73,25 +57,23 @@
 .links .pages {
     list-style: none;
     display: inline-block;
-    margin: 6px 8px;
     padding: 12px;
     cursor: pointer;
+
 }
 
 .links .pages a {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     text-decoration: none;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    font-weight: 900;
 }
 
 .links .pages:hover,
 .contact a img:hover {
     transform: scale(1.2);
-}
-
-.links .pages:hover a {
-    text-decoration: underline;
 }
 
 .background {
@@ -140,7 +122,7 @@ strong {
 }
 
 .logos {
-    width: 60vw;
+    width: 80vw;
     height: 60%;
     margin: 40px 0px;
     display: flex;
@@ -159,7 +141,7 @@ strong {
 
 .logo {
     background-color: rgba(255, 255, 255, 0.74);
-    width: 170px;
+    width: 100px;
     height: 50%;
     margin: 10px;
     border-radius: 10px;
@@ -171,7 +153,6 @@ strong {
 }
 
 .container {
-
     width: 100%;
     margin: auto;
     display: block;
@@ -182,12 +163,18 @@ strong {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, rgba(96, 0, 0, 1) 0%, rgba(78, 0, 14, 1) 15%, rgba(19, 0, 58, 1) 41%, rgba(4, 0, 69, 1) 60%, rgba(71, 0, 111, 1) 86%, rgba(98, 0, 147, 1) 96%, rgba(91, 0, 129, 1) 100%);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 5px, rgba(0, 0, 0, 0.22) 0px 10px 5px;
+    background: ghostwhite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 12px, rgba(0, 0, 0, 0.22) 0px 10px 5px;
     width: 70%;
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     margin: 20px auto;
+    transition: background-color 0.2s ease-in;
+}
+
+.sketch:hover {
+    background: #ff6337;
 }
 
 .sketch-info {
@@ -198,23 +185,23 @@ strong {
 .title {
     padding: 0px 10px;
     cursor: pointer;
-    border-left: 7px solid rgb(255, 153, 0);
+    border-left: 7px solid rgb(0, 0, 0);
 }
 
 .title a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 15, 66);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     cursor: pointer;
 }
 
 .title a:hover {
-    text-decoration: underline;
+    color: rgb(255, 255, 255);
 }
 
 .info {
-    color: rgb(218, 218, 218);
+    color: rgb(0, 0, 0);
     margin: 5px;
     padding: 10px 0px;
     font-size: 15px;
@@ -227,20 +214,23 @@ strong {
     align-items: center;
     width: 150px;
     height: 150px;
-
+    margin: 15px 5%;
 }
 
 .sketch-img a img {
-    width: 90%;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.sketch-img a img:hover {
+    transform: scale(1.05);
+}
+
 footer {
     width: 100%;
-    background: rgb(103, 103, 103);
-    background: linear-gradient(90deg, rgba(103, 103, 103, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(103, 103, 103, 1) 100%);
+    background: linear-gradient(to right, #16222a, #3a6073);
     height: auto;
 }
 
@@ -254,7 +244,7 @@ footer .text h2 {
     display: block;
     text-decoration: none;
     text-align: center;
-    color: rgb(255, 211, 211);
+    color: rgb(255, 126, 27);
     font-size: 25px;
     font-family: 'Ubuntu', sans-serif;
     padding: 8px;
@@ -271,37 +261,76 @@ footer .text h2 {
 .footer-links .pages a {
     color: rgb(202, 202, 202);
     font-size: 12px;
+    text-shadow: none;
 }
 
 footer .copyright {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: rgb(133, 133, 133);
+    color: rgb(181, 181, 181);
     padding: 20px 0px;
     font-size: 13px;
 }
 
-@media screen and (max-width:889px) {
+@media screen and (max-width:730px) {
     .head {
         flex-direction: column;
+        align-items: center;
         height: auto;
+    }
+
+    .head-left {
+        position: relative;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .links {
         display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        background: linear-gradient(to right, #16222a, #3a6073);
+        width: 100%;
+        height: 75px;
+    }
+
+    .links .pages a {
+        color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-shadow: none;
+        font-weight: 900;
     }
 
     .hamburger {
         display: block;
+        cursor: pointer;
+        margin: 0px 10px;
     }
-}
 
-@media screen and (max-width:730px) {
+    .hamburger .line {
+        display: block;
+        background-color: rgb(0, 15, 66);
+        width: 22px;
+        height: 2px;
+        margin: 5px 0px;
+    }
+
+    .show {
+        display: flex;
+    }
+
     .sketch {
         height: auto;
+        width: 90%;
         flex-direction: column;
+    }
+
+    .sketch-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .sketch-info {
+        width: 80%;
     }
 }
